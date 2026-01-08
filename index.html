@@ -1,13 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portofolio Proyek Sains Data</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* CSS SEDERHANA TAPI MODERN */
+        :root {
+            --primary-color: #2563eb; /* Warna biru modern */
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --text-color: #1f2937;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header / Bagian Atas */
+        header {
+            background: linear-gradient(135deg, #1e3a8a, #2563eb);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 { margin: 0; font-size: 2.5rem; }
+        header p { opacity: 0.9; margin-top: 10px; font-size: 1.1rem; }
+
+        /* Container Utama */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Grid Layout untuk Kartu Pertemuan */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        /* Desain Kartu */
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-top: 5px solid var(--primary-color);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .card h3 { margin-top: 0; color: #111827; }
+        .card p { color: #6b7280; font-size: 0.9rem; line-height: 1.5; }
+
+        /* Tombol Link */
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        .btn:hover { background-color: #1d4ed8; }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            color: #6b7280;
+            font-size: 0.8rem;
+        }
+    </style>
 </head>
 <body>
-    <h1>psd</h1>
-    <p>saya belajar membuat web statis dari awal</p>
-    
+
+    <header>
+        <h1>Portofolio Sains Data</h1>
+        <p>Nama Mahasiswa | NIM: 12345678</p>
+        <small>Universitas ABC - Semester 5</small>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+
+            <div class="card">
+                <h3>Pertemuan 1</h3>
+                <p><strong>Topik:</strong> Pengantar Data Science & Setup Environment.</p>
+                <p>Pada pertemuan ini saya mempelajari instalasi Python, Anaconda, dan Git.</p>
+                <a href="pertemuan-1/laporan.html" class="btn">Lihat Laporan</a>
+            </div>
+
+            <div class="card">
+                <h3>Pertemuan 2</h3>
+                <p><strong>Topik:</strong> Exploratory Data Analysis (EDA).</p>
+                <p>Melakukan cleaning data dan visualisasi dasar menggunakan Matplotlib.</p>
+                <a href="pertemuan-2/notebook.html" class="btn">Lihat Notebook</a>
+            </div>
+
+            </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Dibuat dengan VS Code & GitHub Pages
+    </footer>
+
 </body>
 </html>
